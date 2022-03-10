@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../scss/core/_reset.scss">
     <script
       src="https://kit.fontawesome.com/b79a8cfd22.js"
       crossorigin="anonymous"
@@ -19,7 +18,7 @@
     <title>Evaluación final primer módulo.Aimarest.</title>
   </head>
   <body>
- <header>
+ <header class ="header"id="header">
    <a class=""href="https://adalab.es/" title="Menú"> <i class="fa-solid fa-bars"></i></a>
    <img src="../images/logo.png">
  </header>
@@ -29,30 +28,88 @@
      <a class="buynow"href="#"title="Pulse para comprar"> Comprar ahora </a>
    </section>
    <section class="section2">
-     <h2> Volverse organizado se siente mejor con open spaces </h2>
+     <h2 class="section2__title"> Volverse organizado se siente mejor con open spaces </h2>
      <article class="secondsection">
 
-      <img class="icons"src="./images/icon_1.png" alt="icono de variedad de productos"title="variedad de productos"/>
+      <img class="secondsection__icons"src="../images/icon_1.png" alt="icono de variedad de productos"title="variedad de productos"/>
       <h3 class="secondsection__title"> Lo que necesitas</h3>
       <p class="secondsection__text">Una linea de productos diseñados para todos tus espacios</p>
      </article>
      <article class="secondsection">
-       <img class="icons"src="./images/icon_2.png" alt="icono bolsa reciclable"title="bolsa reciclable"/>
+       <img class="secondsection__icons"src="../images/icon_2.png" alt="icono bolsa reciclable"title="bolsa reciclable"/>
        <h3 class="secondsection__title">Materias primas sustentables </h3>
        <p class="secondsection__text"> Todos los productos con materias primas sustentables </p>
      </article>
      <article class="secondsection">
-       <img class="icons"src="./images/icon__3.png" alt="icono de una guía"title="Una guía para ayudarte"/>
+       <img class="secondsection__icons"src="../images/icon__3.png" alt="icono de una guía"title="Una guía para ayudarte"/>
        <h3 class="secondsection__title"> Guía</h3>
        <p class="secondsection__text"> Soporte y asesoramiento para ayudarte con tu objetivo </p>
      </article>
    </section>
-   <section class="section3"></section>
-   <section class="section4"></section>
+   <section class="section3">
+     <img class="section3__icon"src="../images/icon_4.png" alt="icono de una furgoneta"
+     title="Envío gratis"/>
+     <h2 class="section3__title"> Envío gratis garantizado</h2>
+     <p class="section3__text">Envío gratis en compras desde 100 </p>
+     <a class="section3__link" href="https://adalab.es/" title="Haga click para comprar"> Comprar ahora </a>
+   </section>
+   <section class="section4">
+     <article class="fourthsection">
+       <h2 class="section4__title"> Disfruta creando espacios </h2>
+       <p class="section4__text">
+         Una linea de productos diseñados para todos tus espacios
+       </p>
+       <a class="section4__link"href="https://adalab.es/"title="Haz click para comprar"> Comprar ahora </a>
+     </article>
+     <img class="section4__image"src="../images/creando-espacios.jpg" title="Organizadores para baño"
+     alt="foto de organizadores para baño"/>
+   </section>
  </main>
- <footer>
-   <nav>
-
+ <footer class="footer">
+   <nav class="footer__nav">
+<h3 class="footer__title"> Tienda </h3>
+<ul class="footer__list">
+  <li> 
+    <a class="footer__list__link"href="https://adalab.es/"> Productos </a>
+  </li>
+  <li>
+    <a class="footer__list__link"href="https://adalab.es/"> Cajoneras </a>
+  </li>
+  <li>
+    <a class="footer__list__link"href="https://adalab.es/"> Para toda la casa </a>
+  </li>
+  <li>
+    <a class="footer__list__link"href="https://adalab.es/"> Habitaciones </a>
+  </li>
+</ul>
+   </nav>
+   <nav class="footer__nav">
+     <h3 class="footer__title"> Nosotros </h3>
+     <ul class="footer__list">
+       <li>
+         <a class="footer__list__link"href="https://adalab.es/"> Nuestra guía </a>
+       </li>
+       <li>
+         <a class="footer__list__link"href="https://adalab.es/"> Nuestro diseño </a>
+       </li>
+       <li> 
+         <a class="footer__list__link"href="https://adalab.es/"> Nuestra historia </a>
+       </li>
+       <li>
+         <a class="footer__list__link"href="https://adalab.es/"> Ayuda </a>
+       </li>
+     </ul>
+   </nav>
+   <nav class="footer__nav">
+     <h3 class="footer__title"> Contacto </h3>
+     <p class="footer__text"> ayuda@openspaces.com </p>
+     <p class="footer__text"> Socios </p>
+     <nav class="footer__nav__icons">
+       <a class="footer__nav__icon"href="https://adalab.es/"> <i class="fa-brands fa-linkedin-in"></i> </a>
+       <a class="footer__nav__icon"href="https://adalab.es/"> <i class="fa-brands fa-instagram"></i> </a>
+       <a class="footer__nav__icon"href="https://adalab.es/"> <i class="fa-brands fa-twitter"></i> </a>
+     </nav>
+     <a class="footer__arrow"href="#header"> <i class="fa-regular fa-arrow-up-long"></i> </a>
    </nav>
  </footer>
   </body>
