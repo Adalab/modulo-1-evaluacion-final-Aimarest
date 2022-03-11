@@ -33,6 +33,7 @@
   background-image: url(../images/header.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   &__title {
     font-size: $titlesize;
     color: $bluegreen;
@@ -63,8 +64,8 @@
 }
 .section2 {
   display: grid;
-  grid-template-columns: repeat(25% 50% 25%);
-  grid-template-rows: repeat(4 1fr);
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
     ". section2__title ."
     ". section2__article--first ."
@@ -86,11 +87,13 @@
   }
   &__article {
     padding: 2em;
-
+    display: grid;
+    justify-items: center;
+    color: $bluegreen;
     &--first {
       grid-area: section2__article--first;
       grid-template-areas:
-        ". section2__article__icons--products ."
+        ". section2__article__icons--first ."
         ". section2__article__title--first ."
         ". section2__article__text--first .";
     }
@@ -169,6 +172,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
   &__title {
     font-size: $secondtitle;
     font-weight: 600;
@@ -193,7 +197,7 @@
 .section4 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 643px;
   &__article {
     background-color: $lightgrey;
@@ -237,13 +241,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 545px;
   text-align: center;
   position: relative;
+  width: 100vw;
   &__title {
     font-size: $thirdtitle;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin: 56px 0 12px 0;
   }
   &__nav {
     text-align: initial;
@@ -257,9 +261,9 @@
       margin-bottom: 20px;
     }
     &__icon {
-      display: inlineblock;
+      display: inline-block;
       margin-right: 20px;
-      margin-top: 80px;
+      margin-top: 20px;
       color: $grey;
       height: 26px;
       width: 24px;
@@ -270,7 +274,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    right: 200px;
-    bottom: 100px;
+    right: 28px;
+    bottom: 16px;
   }
 }
