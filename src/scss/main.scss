@@ -1,0 +1,100 @@
+@import "core/reset";
+@import "core/variables";
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  height: 134px;
+
+  &__menu {
+    width: 24px;
+    height: 24px;
+    margin-left: 33px;
+    position: absolute;
+    left: 33px;
+    top: 55px;
+    color: $bluegreen;
+  }
+
+  &__image {
+    height: 96px;
+    width: 213px;
+    margin-top: 19px;
+  }
+}
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  &__title {
+    font-size: $titlesize;
+    color: $bluegreen;
+    font-weight: 600;
+  }
+  &__link {
+    width: 176px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: $bluegreen;
+    color: $white;
+    font-size: $textsize;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  &__image {
+    height: 421px;
+    width: 200px;
+    min-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightgrey;
+  width: 100vw;
+
+  &__title {
+    text-align: center;
+    color: $bluegreen;
+    width: 322px;
+    margin-top: 41px;
+    margin-bottom: 37px;
+  }
+}
+.secondsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 208px;
+  &__title {
+    text-align: center;
+    color: $bluegreen;
+    font-size: $thirdtitle;
+    font-weight: 600;
+  }
+  &__text {
+    text-align: center;
+    color: $bluegreen;
+    font-size: $textsize;
+  }
+}
