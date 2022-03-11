@@ -18,13 +18,13 @@
     <title>Evaluación final primer módulo.Aimarest.</title>
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header"">
       <a class="header__menu" href="https://adalab.es/" title="Menú">
         <i class="fa-solid fa-bars"></i
       ></a>
     </header>
     <main>
-      <section class="section1">
+      <section id="up" class="section1">
         <img
           class="section1__image"
           src="../assets/images/logo.png"
@@ -72,7 +72,7 @@
         </article>
         <article class="section2__article--third">
           <img
-            class="section2__article__icons--third"
+            class="section2__article__icons"
             src="../assets/images/icon_3.png"
             alt="icono de una guía"
             title="Una guía para ayudarte"
@@ -101,13 +101,13 @@
         </a>
       </section>
       <section class="section4">
-        <article class="fourthsection">
-          <h2 class="section4__title">Disfruta creando espacios</h2>
-          <p class="section4__text">
+        <article class="section4__article">
+          <h2 class="section4__article__title">Disfruta creando espacios</h2>
+          <p class="section4__article__text">
             Una linea de productos diseñados para todos tus espacios
           </p>
           <a
-            class="section4__link"
+            class="section4__article__link"
             href="https://adalab.es/"
             title="Haz click para comprar"
           >
@@ -124,6 +124,7 @@
     </main>
     <footer class="footer">
       <nav class="footer__nav">
+        <div>
         <h3 class="footer__title">Tienda</h3>
         <ul class="footer__list">
           <li>
@@ -147,8 +148,8 @@
             </a>
           </li>
         </ul>
-      </nav>
-      <nav class="footer__nav">
+      </div>
+     <div>
         <h3 class="footer__title">Nosotros</h3>
         <ul class="footer__list">
           <li>
@@ -170,24 +171,35 @@
             <a class="footer__list__link" href="https://adalab.es/"> Ayuda </a>
           </li>
         </ul>
-      </nav>
-      <nav class="footer__nav">
-        <h3 class="footer__title">Contacto</h3>
-        <p class="footer__text">ayuda@openspaces.com</p>
-        <p class="footer__text">Socios</p>
-        <nav class="footer__nav__icons">
-          <a class="footer__nav__icon" href="https://adalab.es/">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a class="footer__nav__icon" href="https://adalab.es/">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a class="footer__nav__icon" href="https://adalab.es/">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
+      </div>
+      <div>
+        <h3 class="footer__title"> Contacto </h3>
+          <ul class="footer__list">
+            <li>
+              <a class="footer__list__link" href="https://adalab.es/">
+                ayuda@openspaces.com
+              </a>
+            </li>
+            <li>
+              <a class="footer__list__link" href="https://adalab.es/">Socios</a>
+            </li>
+            <li>
+               <a class="footer__list__icon" href="https://adalab.es/">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            
+              <a class="footer__list__icon" href="https://adalab.es/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+             <a class="footer__list__icon" href="https://adalab.es/">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         </nav>
-        <a class="footer__arrow" href="#header">
-          <i class="fa-regular fa-arrow-up-long"></i>
+        <a class="footer__arrow" href="#up">
+          <i class="fa-solid fa-arrow-up"></i>
         </a>
       </nav>
     </footer>
