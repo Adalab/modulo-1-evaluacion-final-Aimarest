@@ -34,10 +34,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   &__title {
     font-size: $titlesize;
     color: $bluegreen;
     font-weight: 600;
+    @media all and (min-width: 768px) {
+      width: 430px;
+    }
   }
   &__link {
     width: 176px;
@@ -60,6 +64,15 @@
     width: 213px;
     position: absolute;
     top: 19px;
+  }
+  &__container {
+    @media all and (min-width: 768px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 147px;
+    }
   }
 }
 .section2 {
