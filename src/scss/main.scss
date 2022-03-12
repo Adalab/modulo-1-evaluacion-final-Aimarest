@@ -6,7 +6,6 @@
 }
 
 .header {
-  width: 100%;
   position: fixed;
   top: 0;
   display: flex;
@@ -70,9 +69,9 @@
     justify-content: center;
     align-items: center;
     @media all and (min-width: 768px) {
-      width: 100%;
       align-items: flex-start;
-      margin-left: 147px;
+      padding-left: 147px;
+      width: 100vw;
     }
   }
 }
@@ -194,6 +193,14 @@
     align-items: center;
     width: 100%;
     height: 50%;
+    &__container {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
     &__title {
       color: $bluegreen;
       font-size: $secondtitle;
@@ -203,6 +210,7 @@
       font-size: $secondtextsize;
       margin: 21px 0 23px;
       color: $bluegreen;
+      text-align: center;
     }
     &__link {
       width: 176px;
@@ -231,13 +239,22 @@
   text-align: center;
   position: relative;
   width: 100vw;
+  text-align: initial;
+  padding-top: 26px;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 42px;
+    padding-left: 40px;
+  }
+  &__nav {
+    width: 200px;
+  }
+
   &__title {
     font-size: $thirdtitle;
     font-weight: 600;
-    margin: 56px 0 12px 0;
-  }
-  &__nav {
-    text-align: initial;
+    margin: 20px 0 12px 0;
   }
   &__list {
     margin-bottom: 40px;
@@ -251,13 +268,13 @@
       display: inline-block;
       margin-right: 20px;
       margin-top: 20px;
-      color: $grey;
+      color: $white;
       height: 26px;
       width: 24px;
     }
   }
   &__arrow {
-    color: $grey;
+    color: $white;
     width: 24px;
     height: 24px;
     position: absolute;
