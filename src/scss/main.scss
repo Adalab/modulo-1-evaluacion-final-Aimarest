@@ -47,7 +47,6 @@
     width: 176px;
     height: 48px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -66,10 +65,12 @@
     top: 19px;
   }
   &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media all and (min-width: 768px) {
       width: 100%;
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
       margin-left: 147px;
     }
@@ -84,45 +85,34 @@
     ". section2__article--first ."
     ". section2__article--second ."
     ". section2__article--third .";
+
   background-color: $lightgrey;
   width: 100vw;
   text-align: center;
 
   &__title {
     display: grid;
+    align-content: center;
+    justify-content: center;
     grid-area: section2__title;
     color: $bluegreen;
-    margin-top: 41px;
-    margin-bottom: 37px;
     &--uppercase {
       text-transform: uppercase;
     }
   }
   &__article {
-    padding: 2em;
     display: grid;
     justify-items: center;
+    justify-content: center;
     color: $bluegreen;
     &--first {
       grid-area: section2__article--first;
-      grid-template-areas:
-        ". section2__article__icons--first ."
-        ". section2__article__title--first ."
-        ". section2__article__text--first .";
     }
     &--second {
       grid-area: section2__article--second;
-      grid-template-areas:
-        ". section2__article__icons--second ."
-        ". section2__article__title--second ."
-        ". section2__article__text--second .";
     }
     &--third {
       grid-area: section2__article--third;
-      grid-template-areas:
-        ". section2__article__icons--third ."
-        ". section2__article__title--third ."
-        ". section2__article__text--third .";
     }
 
     &__title {
@@ -130,17 +120,7 @@
       color: $bluegreen;
       font-size: $thirdtitle;
       font-weight: 600;
-      margin-top: 47px;
       margin-bottom: 12px;
-      &--first {
-        grid-area: section2__article__title--first;
-      }
-      &--second {
-        grid-area: section2__article__title--second;
-      }
-      &--third {
-        grid-area: section2__article__title--third;
-      }
     }
     &__text {
       text-align: center;
@@ -149,30 +129,10 @@
       width: 208px;
       margin-bottom: 36px;
       padding: 0.5em;
-      background-color: green;
-      &--first {
-        grid-area: section2__article__text--first;
-      }
-      &--second {
-        grid-area: section2__article__text--second;
-      }
-      &--third {
-        grid-area: section2__article__text--third;
-      }
     }
     &__icons {
       width: 90px;
       height: 90px;
-      &--first {
-        height: 99px;
-        grid-area: section2__article__icons--first;
-      }
-      &--second {
-        grid-area: section2__article__icons--second;
-      }
-      &--third {
-        grid-area: section2__article__icons--third;
-      }
     }
   }
 }
