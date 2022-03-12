@@ -89,6 +89,13 @@
   background-color: $lightgrey;
   width: 100vw;
   text-align: center;
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+      "section2__title section2__title section2__title"
+      "section2__article--first section2__article--second section2__article--third";
+  }
 
   &__title {
     display: grid;
@@ -99,12 +106,19 @@
     &--uppercase {
       text-transform: uppercase;
     }
+    @media all and (min-width: 768px) {
+      display: block;
+      margin-top: 63px;
+    }
   }
   &__article {
     display: grid;
     justify-items: center;
     justify-content: center;
     color: $bluegreen;
+    @media all and (min-width: 768px) {
+      margin-top: 40px;
+    }
     &--first {
       grid-area: section2__article--first;
     }
