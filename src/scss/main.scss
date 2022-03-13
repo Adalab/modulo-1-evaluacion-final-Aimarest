@@ -20,6 +20,9 @@
     left: 33px;
     top: 55px;
     color: $bluegreen;
+    @media all and (min-width: 1200px) {
+      display: none;
+    }
   }
 }
 .section1 {
@@ -62,7 +65,11 @@
     width: 213px;
     position: absolute;
     top: 19px;
+    @media all and (min-width: 1200px) {
+      top: 39px;
+    }
   }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -72,6 +79,23 @@
       align-items: flex-start;
       padding-left: 147px;
       width: 100vw;
+    }
+    &__nav {
+      display: none;
+      width: 50vw;
+      height: 96px;
+
+      @media all and (min-width: 1200px) {
+        display: flex;
+        position: absolute;
+        top: 39px;
+        align-items: center;
+      }
+      &__link {
+        color: $bluegreen;
+        font-size: $textsize;
+        padding: 20px 20px 20px 0;
+      }
     }
   }
 }
