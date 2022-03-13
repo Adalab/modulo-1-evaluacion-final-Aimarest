@@ -38,11 +38,12 @@
   background-repeat: no-repeat;
 
   &__title {
-    font-size: $titlesize;
+    font-size: $secondtitle;
     color: $bluegreen;
     font-weight: 600;
     @media all and (min-width: 768px) {
       width: 430px;
+      font-size: $titlesize;
     }
   }
   &__link {
@@ -90,6 +91,11 @@
         position: absolute;
         top: 39px;
         align-items: center;
+      }
+      .fixed {
+        @media all and (min-width: 1200px) {
+          position: fixed;
+        }
       }
       &__link {
         color: $bluegreen;
