@@ -48,6 +48,7 @@
       color: $white;
       height: 26px;
       width: 24px;
+      @include hoverEffect(false);
     }
   }
   &__arrow {

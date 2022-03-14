@@ -12,6 +12,7 @@
     left: 33px;
     top: 55px;
     color: $bluegreen;
+    @include hoverEffect(false);
     @media all and (min-width: 768px) {
       top: 75px;
       left: 82px;
