@@ -8,17 +8,27 @@
   align-items: center;
   text-align: center;
   width: 100vw;
+  @media all and (min-width: 1200px) {
+    height: 400px;
+  }
   &__title {
     font-size: $secondtitle;
     font-weight: 600;
     text-align: center;
     margin: 10px;
-    font-family: $font;
+    @media all and (min-width: 768px) {
+      font-size: $subtitlesize;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: $titlesize;
+    }
   }
   &__text {
     font-size: $secondtextsize;
     text-align: center;
-    font-family: $font;
+    @media all and (min-width: 1200px) {
+      font-size: $textsize;
+    }
   }
   &__link {
     color: $white;
@@ -26,7 +36,7 @@
     font-weight: 600;
     text-decoration: underline;
     margin: 17px;
-    padding: 10px;
+    padding: 12px 24px;
     &:hover {
       width: 250px;
       height: 80px;

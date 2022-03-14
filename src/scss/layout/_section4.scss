@@ -26,16 +26,24 @@
       align-content: center;
       justify-content: center;
       align-items: center;
+      @media all and (min-width: 768px) {
+        width: 430px;
+      }
       @media all and (min-width: 1200px) {
         align-items: flex-start;
       }
     }
     &__title {
+      text-align: center;
       color: $bluegreen;
       font-size: $secondtitle;
       font-weight: 600;
+      @media all and (min-width: 768px) {
+        font-size: $subtitlesize;
+      }
       @media all and (min-width: 1200px) {
         font-size: $titlesize;
+        text-align: left;
       }
     }
     &__text {
@@ -58,6 +66,7 @@
       padding: 12px 24px;
       background-color: $bluegreen;
       color: $white;
+      font-size: $textsize;
       &:hover {
         width: 250px;
         height: 80px;

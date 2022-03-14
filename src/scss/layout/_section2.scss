@@ -17,6 +17,7 @@
     grid-template-areas:
       "section2__title section2__title section2__title"
       "section2__article--first section2__article--second section2__article--third";
+    height: 532px;
   }
   @media all and (min-width: 1200px) {
     height: 611px;
@@ -27,6 +28,7 @@
     justify-content: center;
     grid-area: section2__title;
     color: $bluegreen;
+    font-size: $secondtitle;
     &--uppercase {
       text-transform: uppercase;
     }
@@ -45,8 +47,10 @@
     justify-content: center;
     color: $bluegreen;
     @media all and (min-width: 768px) {
-      margin-top: 40px;
+      margin-top: 54px;
+      margin-bottom: 73px;
     }
+
     &--first {
       grid-area: section2__article--first;
     }
@@ -70,11 +74,15 @@
       font-size: $textsize;
       width: 208px;
       margin-bottom: 36px;
-      padding: 0.5em;
     }
     &__icons {
       width: 90px;
       height: 90px;
+      @media all and (min-width: 768px) {
+        width: 72px;
+        height: 81px;
+        margin-bottom: 42px;
+      }
       @media all and (min-width: 1200px) {
         width: 120px;
         height: 120px;

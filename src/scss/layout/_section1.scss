@@ -25,7 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     padding: 12px 24px;
     background-color: $bluegreen;
     color: $white;
@@ -79,7 +78,7 @@
       &__link {
         color: $bluegreen;
         font-size: $textsize;
-        padding: 20px 20px 20px 0;
+        padding: 37px 30px 36px 0;
       }
     }
   }

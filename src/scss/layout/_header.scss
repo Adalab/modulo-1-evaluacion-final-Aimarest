@@ -8,11 +8,14 @@
   &__menu {
     width: 24px;
     height: 24px;
-    margin-left: 33px;
     position: absolute;
     left: 33px;
     top: 55px;
     color: $bluegreen;
+    @media all and (min-width: 768px) {
+      top: 75px;
+      left: 82px;
+    }
     @media all and (min-width: 1200px) {
       display: none;
     }
