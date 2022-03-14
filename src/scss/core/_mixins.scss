@@ -1,0 +1,10 @@
+@mixin hoverEffect($showShadow) {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    @if $showShadow {
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.438);
+    }
+    transform: scale(1.5);
+    border-radius: 20px;
+  }
+}

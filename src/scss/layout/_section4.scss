@@ -67,12 +67,7 @@
       background-color: $bluegreen;
       color: $white;
       font-size: $textsize;
-      &:hover {
-        width: 250px;
-        height: 80px;
-        font-size: $thirdtitle;
-        border-radius: 20px;
-      }
+      @include hoverEffect(true);
     }
   }
   &__image {

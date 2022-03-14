@@ -37,11 +37,6 @@
     text-decoration: underline;
     margin: 17px;
     padding: 12px 24px;
-    &:hover {
-      width: 250px;
-      height: 80px;
-      font-size: $thirdtitle;
-      color: $bluegreen;
-    }
+    @include hoverEffect(false);
   }
 }
