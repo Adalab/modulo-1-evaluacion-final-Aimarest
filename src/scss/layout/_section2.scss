@@ -1,0 +1,84 @@
+.section2 {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    ". section2__title ."
+    ". section2__article--first ."
+    ". section2__article--second ."
+    ". section2__article--third .";
+
+  background-color: $lightgrey;
+  width: 100vw;
+  text-align: center;
+  @media all and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+      "section2__title section2__title section2__title"
+      "section2__article--first section2__article--second section2__article--third";
+  }
+  @media all and (min-width: 1200px) {
+    height: 611px;
+  }
+  &__title {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-area: section2__title;
+    color: $bluegreen;
+    &--uppercase {
+      text-transform: uppercase;
+    }
+    @media all and (min-width: 768px) {
+      display: block;
+      margin-top: 63px;
+    }
+    @media all and(min-width:1200px) {
+      font-size: $titlesize;
+      margin-top: 42px;
+    }
+  }
+  &__article {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    color: $bluegreen;
+    @media all and (min-width: 768px) {
+      margin-top: 40px;
+    }
+    &--first {
+      grid-area: section2__article--first;
+    }
+    &--second {
+      grid-area: section2__article--second;
+    }
+    &--third {
+      grid-area: section2__article--third;
+    }
+
+    &__title {
+      text-align: center;
+      color: $bluegreen;
+      font-size: $thirdtitle;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    &__text {
+      text-align: center;
+      color: $bluegreen;
+      font-size: $textsize;
+      width: 208px;
+      margin-bottom: 36px;
+      padding: 0.5em;
+    }
+    &__icons {
+      width: 90px;
+      height: 90px;
+      @media all and (min-width: 1200px) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}
